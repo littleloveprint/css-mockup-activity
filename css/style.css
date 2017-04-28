@@ -1,0 +1,90 @@
+/*****************************************************
+* CSS Mockup Activity - Custom CSS Stylesheet
+*
+* @author Lea McDuffie littleloveprint
+*
+* Follow the rules and get some more experience.
+* Rochelle's head start CSS below
+******************************************************/
+html, body {
+	margin: 0;
+}
+
+.container {
+	margin: 0 auto;
+	padding: 0 2rem;
+}
+
+.clearfix {
+	clear: both;
+}
+
+/* create a responsive container */
+@media only screen and (min-width: 1200px) {
+	.container { width: 1170px; }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+	.container { width: 970px; }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.container { width: 750px; }
+}
+
+/*****************************************************
+* Flexbox Sticky Footer
+* http://philipwalton.github.io/solved-by-flexbox/demos/sticky-footer/
+******************************************************/
+
+/*corrects IE min-height bug*/
+html { display: flex;}
+body { width: 100%;}
+
+.sfooter {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+.sfooter-content {
+	flex: 1 0 auto;
+}
+
+/*****************************************************
+* Lea's CSS below
+******************************************************/
+body {
+	color: orange;
+}
+
+header {
+	font-family: sans-serif;
+	background-color: orange;
+	color: white;
+	padding: 30px;
+	margin: 0em;
+	border: 0em;
+}
+
+li {
+	border-color: orange;
+}
+
+.pull-left {
+	padding: 30px;
+	margin: 0em;
+	border: 1em solid orange;
+}
+section .container .pull-left {
+	color: darkgrey;
+	background-color: grey;
+}
+
+div > h2 {
+	color: grey;
+}
+
+h1 {
+	display: inline;
+}
