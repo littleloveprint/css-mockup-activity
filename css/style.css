@@ -54,13 +54,15 @@ body { width: 100%;}
 /*****************************************************
 * Lea's CSS below
 ******************************************************/
-body {
-	color: orange;
+main {
+	padding: 0em;
+	margin: 0em;
+	border: 0em;
 }
 
 header {
 	font-family: sans-serif;
-	background-color: orange;
+	background: orange;
 	color: white;
 	padding: 30px;
 	margin: 0em;
@@ -73,8 +75,10 @@ li {
 
 .pull-left {
 	padding: 30px;
-	margin: 0em;
+	margin: 3em;
 	border: 1em solid orange;
+	display: inline-block;
+	color: orange;
 }
 section .container .pull-left {
 	color: darkgrey;
@@ -83,6 +87,11 @@ section .container .pull-left {
 
 div > h2 {
 	color: grey;
+}
+
+div > h2 > table {
+	color: white;
+	background-color: orange;
 }
 
 h1 {
