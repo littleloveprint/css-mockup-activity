@@ -54,46 +54,103 @@ body { width: 100%;}
 /*****************************************************
 * Lea's CSS below
 ******************************************************/
-main {
-	padding: 0em;
-	margin: 0em;
-	border: 0em;
-}
 
-header {
+/* Global styles */
+
+body {
 	font-family: sans-serif;
-	background: orange;
-	color: white;
-	padding: 30px;
-	margin: 0em;
-	border: 0em;
 }
 
-li {
-	border-color: orange;
+.pull-right {
+	float: right;
 }
 
 .pull-left {
-	padding: 30px;
-	margin: 3em;
-	border: 1em solid orange;
-	display: inline-block;
-	color: orange;
-}
-section .container .pull-left {
-	color: darkgrey;
-	background-color: grey;
+	float: left;
 }
 
-div > h2 {
-	color: grey;
+section {
+	padding: 5rem 0;
 }
 
-div > h2 > table {
+h2 {
+	font-size: 2rem;
+	margin-top: 0;
+}
+
+/* Header styles */
+
+header {
+	background: darkorange;
 	color: white;
-	background-color: orange;
+	padding: 2rem 0;
 }
 
-h1 {
-	display: inline;
+header h1 {
+	margin: 0 3rem 0 0;
+	font-size: 4.5rem;
+	display: inline-block;
+}
+
+/* Instructions Section */
+
+.instructions {
+	padding: 3rem;
+	border: 3px solid darkorange;
+	color: darkorange;
+	font-weight: bold;
+	line-height: 1.5rem;
+}
+
+.instructions img {
+	width: 250px;
+	border: 3px solid lightgrey;
+}
+
+/* Captain Picard Section */
+
+section:nth-child(2) {
+	background: lightgrey;
+	color: #555555;
+	line-height: 1.5rem;
+}
+
+img[alt="captain picard"] {
+	width: 300px;
+	border: 3px solid white;
+	margin-right: 3rem;
+
+}
+
+section:nth-child(2) span {
+	font-style: italic;
+	font-weight: bold;
+	color: black;
+	font-family: serif;
+}
+
+/* Professional Skills */
+
+section:last-child h2 {
+	color: darkorange;
+	text-align: right;
+}
+
+table {
+	width: 100%;
+	text-align: left;
+}
+
+th, td {
+	background: darkorange;
+	color: white;
+	padding: 1rem;
+}
+
+/* Footer */
+
+footer {
+	background: black;
+	color: lightgrey;
+	padding: 2rem 0;
 }
